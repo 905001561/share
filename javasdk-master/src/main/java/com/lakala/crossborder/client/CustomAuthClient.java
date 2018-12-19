@@ -31,6 +31,7 @@ public class CustomAuthClient {
      */
     public CustomAuthRes customAuth(CustomAuthReq customAuthReq,LklCrossPaySuperReq dataHead){
     	 CustomAuthRes customAuthRes=null;
+    	 System.out.println("123456");
     	 LklCrossPayEncryptReq req = LklMsgUtil.encryptMsg(customAuthReq, dataHead);
          try {
              LklCrossPayEncryptRes encryptRes = payRestfulClent.doPost(LklCrossPayEncryptRes.class, req, "/gate/customAuth");

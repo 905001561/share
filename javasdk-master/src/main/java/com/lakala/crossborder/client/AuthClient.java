@@ -37,7 +37,7 @@ public class AuthClient {
      * @throws LklClientException
      */
     public AuthRes auth(AuthReq authReq, LklCrossPaySuperReq dataHead) throws LklClientException {
-        System.out.println("test_dome____1111155555566666777");
+        System.out.println("test_dome____1111155555566666777999");
     	AuthRes authRes = null;
         LklCrossPayEncryptReq req = LklMsgUtil.encryptMsg(authReq, dataHead);
         try {
